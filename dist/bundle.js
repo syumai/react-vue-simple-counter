@@ -21321,7 +21321,7 @@ var ReactCounter = function (_Component) {
           ),
           _react2.default.createElement(
             "button",
-            { className: "increment", onClick: function onClick() {
+            { className: "decrement", onClick: function onClick() {
                 return _this2.decrement();
               } },
             "-"
@@ -21381,7 +21381,7 @@ function render(vm) {
       var $event = _ref2.nativeEvent;
 
       vm['increment']($event);
-    }) }, "\n      +\n    "), " ", (0, _react.createElement)('button', { className: "increment".trim(), onClick: (0, _reactVueHelper.event)(function (_ref3) {
+    }) }, "\n      +\n    "), " ", (0, _react.createElement)('button', { className: "decrement".trim(), onClick: (0, _reactVueHelper.event)(function (_ref3) {
       var $event = _ref3.nativeEvent;
 
       vm['decrement']($event);

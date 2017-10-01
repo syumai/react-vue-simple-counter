@@ -30,7 +30,7 @@ export default class ReactCounter extends Component {
           <button className="increment" onClick={() => this.increment()}>
             +
           </button>
-          <button className="increment" onClick={() => this.decrement()}>
+          <button className="decrement" onClick={() => this.decrement()}>
             -
           </button>
         </div>
