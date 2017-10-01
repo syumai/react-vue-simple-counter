@@ -1,44 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Counter extends Component {
-  constructor() {
-    super();
-    this.state = {
-      count: 0
-    };
-  }
+import ReactCounter from './ReactCounter';
+import VueCounter from './VueCounter';
 
-  increment() {
-    this.setState((prevState) => ({
-      count: prevState.count + 1
-    }));
-  }
+const App = () => (
+  <main>
+    <section>
+      <h2>ReactCounter</h2>
+      <ReactCounter />
+    </section>
+    <section>
+      <h2>VueCounter</h2>
+      <VueCounter />
+    </section>
+  </main>
+);
 
-  decrement() {
-    this.setState((prevState) => ({
-      count: prevState.count - 1
-    }));
-  }
-
-  render() {
-    return (
-      <div className="counter">
-        <div className="current-count">
-          {this.state.count}
-        </div>
-        <div className="button-container">
-          <button className="increment" onClick={() => this.increment()}>
-            +
-          </button>
-          <button className="increment" onClick={() => this.decrement()}>
-            -
-          </button>
-        </div>
-      </div>
-    )
-  }
-}
-
-ReactDOM.render(<Counter />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
 
