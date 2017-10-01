@@ -21288,7 +21288,7 @@ var ReactCounter = function (_Component) {
           ),
           _react2.default.createElement(
             "button",
-            { className: "increment", onClick: function onClick() {
+            { className: "decrement", onClick: function onClick() {
                 return _this2.decrement();
               } },
             "-"
@@ -21385,7 +21385,7 @@ var VueCounter = (0, _reactVue.observer)(_class = function (_Component) {
           ),
           _react2.default.createElement(
             'button',
-            { className: 'increment', onClick: function onClick() {
+            { className: 'decrement', onClick: function onClick() {
                 return store.decrement();
               } },
             '-'

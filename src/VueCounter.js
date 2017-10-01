@@ -31,7 +31,7 @@ export default class VueCounter extends Component {
           <button className="increment" onClick={() => store.increment()}>
             +
           </button>
-          <button className="increment" onClick={() => store.decrement()}>
+          <button className="decrement" onClick={() => store.decrement()}>
             -
           </button>
         </div>
