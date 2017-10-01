@@ -7,7 +7,7 @@
       <button class="increment" @click="increment">
         +
       </button>
-      <button class="increment" @click="decrement">
+      <button class="decrement" @click="decrement">
         -
       </button>
     </div>
